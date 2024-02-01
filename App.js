@@ -1,22 +1,21 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import HomeScreen from "./src/screens/HomeScreen";
-import { useState } from "react";
-import LandingLatestScreen from "./src/screens/LandingLatestScreen";
+import HomeScreen from './src/screens/HomeScreen'
+import { useState } from 'react'
+import LandingLatestScreen from './src/screens/LandingLatestScreen'
+import { useFonts } from 'expo-font'
 
 export default function App() {
-  const [currentScreen, setCurrentScreen] = useState("Home");
+  const [currentScreen, setCurrentScreen] = useState('Home')
+  const [fontsLoaded, fontError] = useFonts({
+    'Inter-Regular': require('./assets/fonts/Inter-Regular.ttf'),
+  })
+  if (!fontsLoaded && !fontError) {
+    return null
+  }
   const handleButtonClick = () => {
-    if (currentScreen === "Home") setCurrentScreen("LandingLatestScreen");
-    else setCurrentScreen("Home");
-  };
+    if (currentScreen === 'Home') setCurrentScreen('LandingLatestScreen')
+    else setCurrentScreen('Home')
+  }
   const CurrentComponent =
-    currentScreen === "Home" ? HomeScreen : LandingLatestScreen;
-  return <CurrentComponent onButtonClick={handleButtonClick} />;
+    currentScreen === 'Home' ? HomeScreen : LandingLatestScreen
+  return <CurrentComponent onButtonClick={handleButtonClick} />
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
