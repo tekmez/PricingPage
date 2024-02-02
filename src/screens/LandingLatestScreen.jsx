@@ -7,8 +7,7 @@ import List from '../components/List'
 import BrowserIcon from '../../assets/svg/browserIcon.svg'
 import FolderIcon from '../../assets/svg/folderIcon.svg'
 import GoogleIcon from '../../assets/svg/googleIcon.svg'
-import Switch from '../components/Switch'
-import RadioButton from '../components/Radio'
+import FreeTrial from '../components/FreeTrial'
 
 const LandingLatestScreen = ({ onButtonClick }) => {
   const premiumBoxes = [
@@ -38,8 +37,8 @@ const LandingLatestScreen = ({ onButtonClick }) => {
       <View style={styles.body}>
         <Badge />
         <List data={premiumBoxes} />
+        <FreeTrial />
       </View>
-      <Text style={styles.text}>Landing</Text>
     </View>
   )
 }
@@ -49,9 +48,6 @@ const styles = StyleSheet.create({
   body: {
     padding: 16,
     gap: 8,
-  },
-  text: {
-    fontFamily: 'Inter-Regular',
   },
 })
 

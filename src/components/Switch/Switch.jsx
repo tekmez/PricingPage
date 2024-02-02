@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Switch } from 'react-native'
 
 const CustomSwitch = () => {
-  const [isEnabled, setIsEnabled] = useState(false)
+  const [isEnabled, setIsEnabled] = useState(true)
 
   const toggleSwitch = () => {
     setIsEnabled((previousState) => !previousState)

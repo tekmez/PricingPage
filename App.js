@@ -8,6 +8,7 @@ export default function App() {
   const [fontsLoaded, fontError] = useFonts({
     'Inter-Regular': require('./assets/fonts/Inter-Regular.ttf'),
     'Inter-Bold': require('./assets/fonts/Inter-Bold.ttf'),
+    'Inter-Medium': require('./assets/fonts/Inter-Medium.ttf'),
   })
   if (!fontsLoaded && !fontError) {
     return null
