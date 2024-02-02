@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import Header from '../components/Header'
 import Badge from '../components/Badge'
 import List from '../components/List'
@@ -8,6 +8,7 @@ import BrowserIcon from '../../assets/svg/browserIcon.svg'
 import FolderIcon from '../../assets/svg/folderIcon.svg'
 import GoogleIcon from '../../assets/svg/googleIcon.svg'
 import FreeTrial from '../components/FreeTrial'
+import { PriceList } from '../components/Price'
 
 const LandingLatestScreen = ({ onButtonClick }) => {
   const premiumBoxes = [
@@ -38,6 +39,7 @@ const LandingLatestScreen = ({ onButtonClick }) => {
         <Badge />
         <List data={premiumBoxes} />
         <FreeTrial />
+        <PriceList />
       </View>
     </View>
   )
