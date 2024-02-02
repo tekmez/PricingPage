@@ -10,7 +10,7 @@ const Header = ({ onPress }) => {
   const windowWidth = Dimensions.get('window').width
   return (
     <View>
-      <HeaderLogo width={windowWidth} height={200} aspectRatio={aspectRatio} />
+      <HeaderLogo width={windowWidth} height={190} aspectRatio={aspectRatio} />
       <Close onPress={onPress} />
     </View>
   )
