@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { Button, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
+import Button from '../components/Button'
 
 const HomeScreen = ({ onButtonClick }) => {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text>HomeScreen</Text>
       <Button title="Landing Latest Screen" onPress={onButtonClick} />
     </View>
   )

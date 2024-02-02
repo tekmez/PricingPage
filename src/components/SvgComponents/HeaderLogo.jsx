@@ -1,6 +1,5 @@
 import { Dimensions, View } from 'react-native'
 import Svg, { Path, Rect, G, Defs, ClipPath } from 'react-native-svg'
-import CloseIcon from './CloseIcon'
 const HeaderLogo = () => {
   const originalWidth = 393
   const originalHeight = 160
