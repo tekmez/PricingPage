@@ -1,13 +1,17 @@
 import React from 'react'
-import { Button, View } from 'react-native'
-import HeaderLogo from './SvgComponents/HeaderLogo'
-import CloseIcon from './SvgComponents/CloseIcon'
+import { Dimensions, View } from 'react-native'
+import Close from './Close'
+import HeaderLogo from '../../assets/svg/headerLogo.svg'
 
 const Header = ({ onPress }) => {
+  const originalWidth = 393
+  const originalHeight = 160
+  const aspectRatio = originalWidth / originalHeight
+  const windowWidth = Dimensions.get('window').width
   return (
     <View>
-      <HeaderLogo />
-      <CloseIcon onPress={onPress} />
+      <HeaderLogo width={windowWidth} height={200} aspectRatio={aspectRatio} />
+      <Close onPress={onPress} />
     </View>
   )
 }
