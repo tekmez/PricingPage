@@ -9,7 +9,7 @@ import FolderIcon from '../../assets/svg/folderIcon.svg'
 import GoogleIcon from '../../assets/svg/googleIcon.svg'
 import FreeTrial from '../components/FreeTrial'
 import { PriceList } from '../components/Price'
-
+import Button from '../components/Button'
 const LandingLatestScreen = ({ onButtonClick }) => {
   const premiumBoxes = [
     {
@@ -32,7 +32,7 @@ const LandingLatestScreen = ({ onButtonClick }) => {
     },
   ]
   return (
-    <View style={styles.container}>
+    <View>
       <StatusBar style="light" />
       <Header onPress={onButtonClick} />
       <View style={styles.body}>
@@ -40,13 +40,13 @@ const LandingLatestScreen = ({ onButtonClick }) => {
         <List data={premiumBoxes} />
         <FreeTrial />
         <PriceList />
+        <Button title="7 Day Trial and Plan" theme="secondary" />
       </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {},
   body: {
     padding: 16,
     gap: 8,

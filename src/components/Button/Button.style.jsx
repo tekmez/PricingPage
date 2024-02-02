@@ -21,6 +21,7 @@ const styles = {
       paddingVertical: 12,
       paddingHorizontal: 100,
       borderRadius: 8,
+      marginTop: 12,
     },
     buttonText: {
       color: '#fff',
