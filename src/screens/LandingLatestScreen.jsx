@@ -7,6 +7,8 @@ import List from '../components/List'
 import BrowserIcon from '../../assets/svg/browserIcon.svg'
 import FolderIcon from '../../assets/svg/folderIcon.svg'
 import GoogleIcon from '../../assets/svg/googleIcon.svg'
+import Switch from '../components/Switch'
+import RadioButton from '../components/Radio'
 
 const LandingLatestScreen = ({ onButtonClick }) => {
   const premiumBoxes = [
