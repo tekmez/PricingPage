@@ -10,6 +10,8 @@ import GoogleIcon from '../../assets/svg/googleIcon.svg'
 import FreeTrial from '../components/FreeTrial'
 import { PriceList } from '../components/Price'
 import Button from '../components/Button'
+import Payment from '../components/Payment'
+import Footer from '../components/Footer'
 const LandingLatestScreen = ({ onButtonClick }) => {
   const premiumBoxes = [
     {
@@ -41,6 +43,8 @@ const LandingLatestScreen = ({ onButtonClick }) => {
         <FreeTrial />
         <PriceList />
         <Button title="7 Day Trial and Plan" theme="secondary" />
+        <Payment />
+        <Footer />
       </View>
     </View>
   )
