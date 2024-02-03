@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price Container should match snapshot 1`] = `
+<View>
+  <Text
+    style={
+      {
+        "color": "#717578",
+        "fontFamily": "Inter-Regular",
+        "fontSize": 12,
+        "letterSpacing": 0.5,
+        "lineHeight": 16,
+      }
+    }
+    testID="price-container-title"
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 6,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "fontFamily": "Inter-Bold",
+          "fontSize": 12,
+          "fontWeight": "600",
+          "lineHeight": 16,
+        }
+      }
+      testID="bold-price-title"
+    />
+  </View>
+</View>
+`;

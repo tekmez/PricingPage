@@ -7,10 +7,18 @@ const PriceContainer = ({ saving, title, price, boldPrice }) => {
   return (
     <View>
       {saving && <PriceBadge title={saving} />}
-      <Text style={styles.title}>{title}</Text>
+      <Text testID="price-container-title" style={styles.title}>
+        {title}
+      </Text>
       <View style={styles.priceContainer}>
-        {price && <Text style={styles.lightPrice}>{price}</Text>}
-        <Text style={styles.boldPrice}>{boldPrice}</Text>
+        {price && (
+          <Text testID="light-price-title" style={styles.lightPrice}>
+            {price}
+          </Text>
+        )}
+        <Text testID="bold-price-title" style={styles.boldPrice}>
+          {boldPrice}
+        </Text>
       </View>
     </View>
   )

@@ -7,6 +7,7 @@ const Price = ({ title, saving, price, boldPrice, theme, selected }) => {
   const [isEnabled, setIsEnabled] = useState(selected)
   return (
     <View
+      testID="price-container"
       style={[
         styles.container,
         theme === 'primary' ? styles.primaryBorder : styles.secondaryBorder,

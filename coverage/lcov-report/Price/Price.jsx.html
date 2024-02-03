@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for FreeTrial/FreeTrial.style.jsx</title>
+    <title>Code coverage report for Price/Price.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">FreeTrial</a> FreeTrial.style.jsx</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">Price</a> Price.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -90,10 +90,14 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -113,40 +117,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { StyleSheet } from 'react-native'
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from 'react'
+import { View } from 'react-native'
+import styles from './Price.style'
+import RadioButton from '../Radio'
+import PriceContainer from './PriceContainer'
+const Price = ({ title, saving, price, boldPrice, theme, selected }) =&gt; {
+  const [isEnabled, setIsEnabled] = useState(selected)
+  return (
+    &lt;View
+      testID="price-container"
+      style={[
+        styles.container,
+        theme === 'primary' ? styles.primaryBorder : styles.secondaryBorder,
+      ]}
+    &gt;
+      &lt;PriceContainer
+        saving={saving}
+        title={title}
+        price={price}
+        boldPrice={boldPrice}
+      /&gt;
+      &lt;RadioButton isEnabled={isEnabled} setIsEnabled={setIsEnabled} /&gt;
+    &lt;/View&gt;
+  )
+}
 &nbsp;
-const styles = StyleSheet.create({
-  container: {
-    paddingVertical: 13,
-    paddingHorizontal: 20,
-    borderRadius: 8,
-    backgroundColor: '#FFF5F5',
-    borderWidth: 2,
-    borderColor: '#FF0000',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  lightText: {
-    fontFamily: 'Inter-Medium',
-    color: '#717578',
-    fontSize: 12,
-    lineHeight: 16,
-  },
-  regularText: {
-    fontFamily: 'Inter-Bold',
-    fontSize: 14,
-    lineHeight: 20,
-  },
-})
-&nbsp;
-export default styles
+export default Price
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
