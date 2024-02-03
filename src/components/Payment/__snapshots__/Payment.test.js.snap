@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment should match snapshot 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+      "gap": 4,
+      "height": 16,
+      "marginTop": 6,
+      "width": 134,
+    }
+  }
+  testID="payment-container"
+>
+  <div
+    testID="shield-icon"
+  />
+  <Text
+    style={
+      {
+        "color": "#717578",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 12,
+        "lineHeight": 16,
+      }
+    }
+    testID="payment-title"
+  >
+    NO PAYMENT NOW
+  </Text>
+</View>
+`;

@@ -3,9 +3,11 @@ import ShieldIcon from '../../../assets/svg/shieldIcon.svg'
 import styles from './Payment.style'
 const Payment = () => {
   return (
-    <View style={styles.container}>
+    <View testID="payment-container" style={styles.container}>
       <ShieldIcon width={16} height={16} />
-      <Text style={styles.text}>NO PAYMENT NOW</Text>
+      <Text testID="payment-title" style={styles.text}>
+        NO PAYMENT NOW
+      </Text>
     </View>
   )
 }
