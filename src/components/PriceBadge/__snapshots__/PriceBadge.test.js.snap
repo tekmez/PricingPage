@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price Badge should match snapshot 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#FF0000",
+      "borderRadius": 16,
+      "height": 20,
+      "left": 245,
+      "paddingHorizontal": 16,
+      "paddingVertical": 2,
+      "position": "absolute",
+      "top": -22,
+      "width": 92,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#FFFFFF",
+        "fontFamily": "Inter-Regular",
+        "fontSize": 12,
+        "lineHeight": 16,
+      }
+    }
+    testID="price-title"
+  />
+</View>
+`;

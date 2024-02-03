@@ -3,7 +3,9 @@ import styles from './PriceBadge.style'
 const PriceBadge = ({ title }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+      <Text testID="price-title" style={styles.title}>
+        {title}
+      </Text>
     </View>
   )
 }
