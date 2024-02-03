@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List should match snapshot 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={
+    <View
+      style={
+        {
+          "backgroundColor": "#E7EAF4",
+          "height": 1,
+          "marginHorizontal": 10,
+        }
+      }
+      testID="list-separator"
+    />
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#fff",
+    }
+  }
+  testID="list"
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View />
+</RCTScrollView>
+`;

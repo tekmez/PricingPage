@@ -3,11 +3,17 @@ import { View, Text } from 'react-native'
 import styles from './ListItem.style'
 const ListItem = ({ icon, title, description }) => {
   return (
-    <View style={styles.container}>
-      <View style={styles.iconContainer}>{icon}</View>
-      <View style={styles.infoContainer}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.description}>{description}</Text>
+    <View testID="list-item-container" style={styles.container}>
+      <View testID="list-item-icon" style={styles.iconContainer}>
+        {icon}
+      </View>
+      <View testID="list-item-info" style={styles.infoContainer}>
+        <Text testID="list-item-title" style={styles.title}>
+          {title}
+        </Text>
+        <Text testID="list-item-description" style={styles.description}>
+          {description}
+        </Text>
       </View>
     </View>
   )

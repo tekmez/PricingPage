@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Item should match snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "gap": 16,
+      "paddingVertical": 20,
+    }
+  }
+  testID="list-item-container"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "borderColor": "#E7E8E9",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 40,
+        "justifyContent": "center",
+        "width": 40,
+      }
+    }
+    testID="list-item-icon"
+  >
+    test-icon
+  </View>
+  <View
+    style={
+      {
+        "flex": 1,
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+      }
+    }
+    testID="list-item-info"
+  >
+    <Text
+      style={
+        {
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "lineHeight": 20,
+        }
+      }
+      testID="list-item-title"
+    >
+      Test Title
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#717578",
+          "fontFamily": "Inter-Regular",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "lineHeight": 16,
+        }
+      }
+      testID="list-item-description"
+    >
+      Test Description
+    </Text>
+  </View>
+</View>
+`;

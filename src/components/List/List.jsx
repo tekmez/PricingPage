@@ -1,11 +1,12 @@
 import React from 'react'
-import { FlatList, Text, View } from 'react-native'
+import { FlatList, View } from 'react-native'
 import styles from './List.style'
 import ListItem from '../ListItem'
 const List = ({ data }) => {
   return (
     <FlatList
       data={data}
+      testID="list"
       renderItem={({ item }) => (
         <ListItem
           icon={item.icon}
@@ -17,6 +18,7 @@ const List = ({ data }) => {
       style={styles.container}
       ItemSeparatorComponent={
         <View
+          testID="list-separator"
           style={{
             height: 1,
             backgroundColor: '#E7EAF4',
