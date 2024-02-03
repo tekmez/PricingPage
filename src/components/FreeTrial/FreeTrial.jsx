@@ -5,8 +5,12 @@ const FreeTrial = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.lightText}>not sure yet ?</Text>
-        <Text style={styles.regularText}>Enable Free Trial</Text>
+        <Text testID="free-trial-light-title" style={styles.lightText}>
+          not sure yet ?
+        </Text>
+        <Text testID="free-trial-regular-title" style={styles.regularText}>
+          Enable Free Trial
+        </Text>
       </View>
       <CustomSwitch />
     </View>
