@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders custom radio component 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+  testID="radio-button"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "borderColor": "#E7E8E9",
+        "borderRadius": 12,
+        "borderWidth": 2,
+        "height": 24,
+        "justifyContent": "center",
+        "width": 24,
+      }
+    }
+    testID="radio-button-style"
+  />
+</View>
+`;

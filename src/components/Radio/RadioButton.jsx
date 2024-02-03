@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { View, TouchableWithoutFeedback } from 'react-native'
 import styles from './Radio.style'
 import CheckIcon from '../../../assets/svg/checkIcon.svg'
@@ -7,9 +7,10 @@ const RadioButton = ({ isEnabled, setIsEnabled }) => {
     setIsEnabled((previousState) => !previousState)
   }
   return (
-    <TouchableWithoutFeedback onPress={onSelect}>
-      <View style={styles.radioButtonContainer}>
+    <TouchableWithoutFeedback testID="radio-button" onPress={onSelect}>
+      <View testID="radio-container" style={styles.radioButtonContainer}>
         <View
+          testID="radio-button-style"
           style={
             isEnabled
               ? styles.radioButtonSelected

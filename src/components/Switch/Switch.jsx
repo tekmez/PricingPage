@@ -10,6 +10,7 @@ const CustomSwitch = () => {
 
   return (
     <Switch
+      testID="custom-switch"
       trackColor={{ false: '#767577', true: '#21D840' }}
       thumbColor="#fff"
       ios_backgroundColor="#767577"

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomSwitch renders custom switch component 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="#21D840"
+  style={
+    [
+      {
+        "height": 31,
+        "width": 51,
+      },
+      {
+        "backgroundColor": "#767577",
+        "borderRadius": 16,
+      },
+    ]
+  }
+  testID="custom-switch"
+  thumbTintColor="#fff"
+  tintColor="#767577"
+  value={true}
+/>
+`;

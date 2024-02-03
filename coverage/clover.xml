@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1706986371618" clover="3.2.0">
-  <project timestamp="1706986371618" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="7" coveredconditionals="5" methods="8" coveredmethods="8" elements="37" coveredelements="35" complexity="0" loc="22" ncloc="22" packages="6" files="13" classes="13"/>
+<coverage generated="1706995741410" clover="3.2.0">
+  <project timestamp="1706995741411" name="All files">
+    <metrics statements="32" coveredstatements="32" conditionals="11" coveredconditionals="9" methods="14" coveredmethods="13" elements="57" coveredelements="54" complexity="0" loc="32" ncloc="32" packages="8" files="16" classes="16"/>
     <package name="Badge">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Badge.jsx" path="C:\Users\tunca\OneDrive\Masaüstü\TeknasynAssessments\src\components\Badge\Badge.jsx">
@@ -79,6 +79,31 @@
       </file>
       <file name="index.jsx" path="C:\Users\tunca\OneDrive\Masaüstü\TeknasynAssessments\src\components\Link\index.jsx">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="Radio">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
+      <file name="Radio.style.jsx" path="C:\Users\tunca\OneDrive\Masaüstü\TeknasynAssessments\src\components\Radio\Radio.style.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="RadioButton.jsx" path="C:\Users\tunca\OneDrive\Masaüstü\TeknasynAssessments\src\components\Radio\RadioButton.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="Switch">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Switch.jsx" path="C:\Users\tunca\OneDrive\Masaüstü\TeknasynAssessments\src\components\Switch\Switch.jsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
       </file>
     </package>
   </project>
