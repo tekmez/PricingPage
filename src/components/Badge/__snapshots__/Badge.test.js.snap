@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component should match snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#FFF5F5",
+      "borderRadius": 6,
+      "flexDirection": "row",
+      "gap": 8,
+      "height": 32,
+      "paddingHorizontal": 12,
+      "paddingVertical": 6,
+      "width": 174,
+    }
+  }
+  testID="badge-container"
+>
+  <div
+    testID="youtube-icon"
+  />
+  <Text
+    style={
+      {
+        "color": "#FF0000",
+        "fontFamily": "Inter-Bold",
+        "fontSize": 14,
+        "lineHeight": 18,
+      }
+    }
+    testID="badge-title"
+  >
+    Youtube Premium
+  </Text>
+</View>
+`;

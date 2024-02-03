@@ -6,7 +6,17 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(@react-native|react-native)/).*/"
+    ],
+    "transform": {
+      "^.+\\.[jt]sx?$": "babel-jest"
+    }
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.2.3",
@@ -20,11 +30,14 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@testing-library/react-native": "^12.4.3",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-universe": "^12.0.0",
     "eslint-plugin-react": "^7.33.2",
-    "prettier": "3.2.4"
+    "jest-expo": "^50.0.1",
+    "prettier": "3.2.4",
+    "react-test-renderer": "^18.2.0"
   },
   "private": true
 }

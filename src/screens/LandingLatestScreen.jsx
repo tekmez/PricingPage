@@ -33,6 +33,20 @@ const LandingLatestScreen = ({ onButtonClick }) => {
       description: 'Gorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
   ]
+  const footerLinks = [
+    {
+      title: 'Privacy Policy',
+      url: 'https://www.google.com',
+    },
+    {
+      title: 'Terms of Service',
+      url: 'https://www.google.com',
+    },
+    {
+      title: 'Restore',
+      url: 'https://www.google.com',
+    },
+  ]
   return (
     <View>
       <StatusBar style="light" />
@@ -44,7 +58,7 @@ const LandingLatestScreen = ({ onButtonClick }) => {
         <PriceList />
         <Button title="7 Day Trial and Plan" theme="secondary" />
         <Payment />
-        <Footer />
+        <Footer data={footerLinks} />
       </View>
     </View>
   )

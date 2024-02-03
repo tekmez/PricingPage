@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1706973168305" clover="3.2.0">
+  <project timestamp="1706973168305" name="All files">
+    <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1" elements="5" coveredelements="5" complexity="0" loc="3" ncloc="3" packages="1" files="2" classes="2"/>
+    <file name="Button.jsx" path="C:\Users\tunca\OneDrive\Masaüstü\TeknasynAssessments\src\components\Button\Button.jsx">
+      <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+    </file>
+    <file name="Button.style.jsx" path="C:\Users\tunca\OneDrive\Masaüstü\TeknasynAssessments\src\components\Button\Button.style.jsx">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

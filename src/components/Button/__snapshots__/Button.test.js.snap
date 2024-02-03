@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Touchable Button should match snapshot 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#40A2E3",
+      "borderRadius": 8,
+      "opacity": 1,
+      "paddingHorizontal": 50,
+      "paddingVertical": 12,
+    }
+  }
+  testID="button-touchable"
+>
+  <Text
+    style={
+      {
+        "color": "#fff",
+        "fontFamily": "Inter-Regular",
+        "fontSize": 16,
+        "textAlign": "center",
+      }
+    }
+    testID="button-title"
+  >
+    Click me
+  </Text>
+</View>
+`;

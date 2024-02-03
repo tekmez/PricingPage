@@ -4,9 +4,11 @@ import styles from './Badge.style'
 import YoutubeIcon from '../../../assets/svg/youtubeIcon.svg'
 const Badge = () => {
   return (
-    <View style={styles.container}>
+    <View testID="badge-container" style={styles.container}>
       <YoutubeIcon width={20} height={20} />
-      <Text style={styles.text}>Youtube Premium</Text>
+      <Text testID="badge-title" style={styles.text}>
+        Youtube Premium
+      </Text>
     </View>
   )
 }

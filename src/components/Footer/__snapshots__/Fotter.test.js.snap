@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should default match snapshot 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 8,
+      "justifyContent": "center",
+    }
+  }
+  testID="footer-container"
+/>
+`;
+
+exports[`Footer component should match snapshot with data 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 8,
+      "justifyContent": "center",
+    }
+  }
+  testID="footer-container"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="link"
+  >
+    <Text
+      style={
+        {
+          "color": "#717578",
+          "fontFamily": "Inter-Medium",
+          "fontSize": 12,
+          "lineHeight": 16,
+        }
+      }
+      testID="link-title"
+    >
+      Privacy Policy
+    </Text>
+  </View>
+  <Text
+    style={
+      {
+        "color": "#717578",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 12,
+        "lineHeight": 16,
+      }
+    }
+  >
+     - 
+  </Text>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="link"
+  >
+    <Text
+      style={
+        {
+          "color": "#717578",
+          "fontFamily": "Inter-Medium",
+          "fontSize": 12,
+          "lineHeight": 16,
+        }
+      }
+      testID="link-title"
+    >
+      Terms of Service
+    </Text>
+  </View>
+  <Text
+    style={
+      {
+        "color": "#717578",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 12,
+        "lineHeight": 16,
+      }
+    }
+  >
+     - 
+  </Text>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="link"
+  >
+    <Text
+      style={
+        {
+          "color": "#717578",
+          "fontFamily": "Inter-Medium",
+          "fontSize": 12,
+          "lineHeight": 16,
+        }
+      }
+      testID="link-title"
+    >
+      Contact Us
+    </Text>
+  </View>
+</View>
+`;

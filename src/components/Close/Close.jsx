@@ -6,7 +6,11 @@ const topAlign = Platform.OS === 'ios' ? 52 : StatusBar.currentHeight
 const rightAlign = Platform.OS === 'ios' ? 42 : StatusBar.currentHeight - 24
 const Close = ({ onPress }) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
+    <TouchableOpacity
+      testID="close-button"
+      style={styles.container}
+      onPress={onPress}
+    >
       <CloseIcon width={36} height={36} />
     </TouchableOpacity>
   )
