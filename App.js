@@ -1,15 +1,11 @@
 import HomeScreen from './src/screens/HomeScreen'
 import { useState } from 'react'
 import LandingLatestScreen from './src/screens/LandingLatestScreen'
-import { useFonts } from 'expo-font'
+import { loadFonts } from './src/utils/FontLoader'
 
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState('Home')
-  const [fontsLoaded, fontError] = useFonts({
-    'Inter-Regular': require('./assets/fonts/Inter-Regular.ttf'),
-    'Inter-Bold': require('./assets/fonts/Inter-Bold.ttf'),
-    'Inter-Medium': require('./assets/fonts/Inter-Medium.ttf'),
-  })
+  const [fontsLoaded, fontError] = loadFonts()
   if (!fontsLoaded && !fontError) {
     return null
   }
